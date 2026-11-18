@@ -1,0 +1,11 @@
+/*
+ * Front-end visibility. <html data-visitor> is set by a blocking inline script in <head>,
+ * so the correct variant is resolved before first paint (no flicker, no layout shift).
+ *
+ * Default (no JS / storage blocked): treat the visitor as new.
+ * display:none also removes hidden variants from the accessibility tree.
+ */
+html:not([data-visitor="returning"]) .pc-audience-returning,
+html[data-visitor="returning"] .pc-audience-new {
+	display: none;
+}

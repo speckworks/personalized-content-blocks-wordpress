@@ -1,0 +1,16 @@
+{
+  "name": "personalized-content-block",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Gutenberg block that shows nested content to new or returning visitors, cache-safe and without layout shift.",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "lint:js": "wp-scripts lint-js",
+    "env": "wp-env"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.0.0",
+    "@wordpress/scripts": "^30.0.0"
+  }
+}

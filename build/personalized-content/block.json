@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "speckworks/personalized-content",
+  "version": "0.1.0",
+  "title": "Personalized Content",
+  "category": "design",
+  "icon": "groups",
+  "description": "Show the blocks inside to a specific audience, such as new or returning visitors.",
+  "keywords": [
+    "personalization",
+    "audience",
+    "segment",
+    "experiment",
+    "visitor"
+  ],
+  "textdomain": "personalized-content",
+  "attributes": {
+    "audience": {
+      "type": "string",
+      "enum": [
+        "all",
+        "new",
+        "returning"
+      ],
+      "default": "all"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
