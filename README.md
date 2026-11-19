@@ -1,3 +1,6 @@
+![One cached page, two experiences: new vs. returning visitor](demo.gif)
+
+*One cached page, two experiences. No flicker, no layout shift.*
 # Personalized Content Block
 
 A Gutenberg block that shows its nested blocks to **new** or **returning** visitors. Authors add one block per audience; every variant ships in the page HTML, and the right one is revealed before first paint.
